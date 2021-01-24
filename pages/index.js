@@ -10,6 +10,9 @@ export default function Home() {
       <Head>
         <title>Jacin</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* Global site tag (gtag.js) - Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9J0PV6JR5"></script>
+        <script src="/ga.js" async></script>
       </Head>
     
       <Container mt={20} bg={"gray.900"}>
