@@ -60,7 +60,7 @@ const projects = [
         state: "Inactive",
         revenue: "TOTAL REVENUE €0",
         profitable: "No",
-        description: "Introduce cuanto dinero quieres ganar y averigüa qué tienes que conseguir en cada plataforma",
+        description: "Introduce cuanto dinero quieres ganar y averigua qué tienes que conseguir en cada plataforma",
         launched: "2020",
         timeWorkingOn: "8 hours",
         links: [
