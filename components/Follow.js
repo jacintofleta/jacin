@@ -8,7 +8,7 @@ const Follow = () => {
         mt={8}
         letterSpacing="wide"
         >
-          Estoy contando todo con total transparencia en mi <a href="https://twitter.com/jacintofleta"><b><u>twitter</u></b></a>. Cuando encuentro algo interesante en lo que profundizar también escribo en mi <b>newsletter:</b>
+          Estoy contando todo con total transparencia en mi <a href="https://twitter.com/jacintofleta"><b><u>twitter</u></b></a>. Y esta es mi newsletter donde aprendo a golpes a montar proyectos rentables (escribo solo cuando tengo algo que contar):
         </Text>
         <Flex
             mt={10}

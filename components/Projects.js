@@ -3,12 +3,13 @@ import projects from '../helpers/projects';
 import { ChevronDownIcon, ChevronUpIcon, LinkIcon } from '@chakra-ui/icons'
 import { IoRocketSharp, IoTime } from 'react-icons/io5';
 import { FaMoneyCheckAlt } from 'react-icons/fa'
+import { BsFillPlusCircleFill } from 'react-icons/bs'
 import { Container, Heading, Text, Box, Badge, Icon, Flex } from "@chakra-ui/react"
 
 
 const Projects = () => {
 
-    const [numberOfProjects , setNumberOfProjects] = useState(5);
+    const [numberOfProjects , setNumberOfProjects] = useState(6);
     const [openedProject, setOpenedProject] = useState(null);
   
     const manageOpenProject = (title) => {
@@ -80,13 +81,25 @@ const Projects = () => {
                         textTransform="uppercase"
                         ml="2"
                       >
-                      Revenue €{project.revenue}/month
+                      {project.revenue}
                       </Box>
                     </>
                   : 
-                  <Badge borderRadius="full" px="2" colorScheme="red">
-                      Closed
-                  </Badge>
+                  <>
+                    <Badge borderRadius="full" px="2" colorScheme="red">
+                        {project.state}
+                    </Badge>
+                    <Box
+                    color="gray.300"
+                    fontWeight="semibold"
+                    letterSpacing="wide"
+                    fontSize="xs"
+                    textTransform="uppercase"
+                    ml="2"
+                    >
+                    {project.revenue}
+                    </Box>
+                </>
                   
                   }
               </Box>
@@ -95,8 +108,8 @@ const Projects = () => {
               { openedProject === project.title ?
               <>
                 <Text
-                  mt={4}
-                  mb={4}
+                  mt={6}
+                  mb={6}
                   color="gray.300"
                   letterSpacing="wide"
                   fontSize="md"
@@ -157,15 +170,16 @@ const Projects = () => {
                 </Box>
                 
                 {project.links ?
-                <>
-                    <Flex mt={4}>
+                <Box mt={6}>
                     { project.links.map(link =>
+                    
                         <Text as="u" color="gray.400" mr={3}>
                           <a target="_blank" href={link.url}><LinkIcon /> {link.name}</a>
                         </Text>
+                        
                     )}
-                    </Flex>
-                </>
+                   
+                </Box>
                 : null}
                 
               </>
@@ -176,17 +190,19 @@ const Projects = () => {
           
         ).slice(0, numberOfProjects)}
 
-        {numberOfProjects <= projects.length ?
-        <Text
-        color="gray.400"
-        align="right"
-        fontSize="sm"
-        cursor="pointer"
-        mt={2}
-        mb={6}
-        onClick = {() => setNumberOfProjects(numberOfProjects + 3)}>
-          View more
-        </Text>
+        {numberOfProjects < projects.length ?
+        <Box align="center">
+            <Icon
+            w={30}
+            h={30}
+            fill="white"
+            as={BsFillPlusCircleFill}
+            cursor="pointer"
+            mt={6}
+            mb={6}
+            onClick = {() => setNumberOfProjects(numberOfProjects + 3)}>
+            </Icon>
+        </Box>
         :
           null
         }
