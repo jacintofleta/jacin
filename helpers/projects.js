@@ -23,7 +23,7 @@ const projects = [
         state: "Active",
         revenue: "Over 100k customers",
         profitable: "Yes",
-        description: "Marca de referencia para la generación Z en complementos y decoración. Al ser una startup cofundada los datos exactos de facturación son privados.",
+        description: "Marca de referencia para la generación Z en complementos y decoración.",
         launched: "April 2016",
         timeWorkingOn: "Full time from 2016 to 2020",
         links: [
