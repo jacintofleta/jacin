@@ -23,11 +23,11 @@ const Projects = () => {
 
 
     return (
-        <div>
+        <Box mt={14}>
             {projects.map( (project, index) =>
         <Box
           maxW="full"
-          mt={6}
+          mt={10}
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"
@@ -191,7 +191,7 @@ const Projects = () => {
         ).slice(0, numberOfProjects)}
 
         {numberOfProjects < projects.length ?
-        <Box align="center">
+        <Box align="center" mt={6}>
             <Icon
             w={30}
             h={30}
@@ -206,7 +206,7 @@ const Projects = () => {
         :
           null
         }
-        </div>
+        </Box>
     )
 }
 

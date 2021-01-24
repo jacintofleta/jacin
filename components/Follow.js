@@ -1,9 +1,9 @@
 import React from 'react'
-import { Text, Flex, Heading } from "@chakra-ui/react"
+import { Text, Flex, Heading, Box } from "@chakra-ui/react"
 
 const Follow = () => {
     return (
-        <>
+        <Box mt={10} mb={20}>
         <Text
         mt={8}
         letterSpacing="wide"
@@ -19,7 +19,7 @@ const Follow = () => {
             <iframe src="https://jacin.substack.com/embed" width="100%" height={300}
             style={{border: '1px solid #EEE', background: 'white'}} frameBorder={0} scrolling="no"/>
         </Flex>
-        </>
+        </Box>
     )
 }
 

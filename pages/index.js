@@ -12,12 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-      <Container mt={10} bg={"gray.900"}>
+      <Container mt={20} bg={"gray.900"}>
         <Heading >
           Hola, soy Jacin
         </Heading>
         <Text
-        mt={5}
+        mt={8}
         letterSpacing="wide"
         >
           Quiero acabar con la opacidad en el mundo startup. Empezando por mi mismo. Estos son mis proyectos y sus resultados.
@@ -27,7 +27,7 @@ export default function Home() {
       
         <Follow />
 
-        <Box align="center" mb={8}>
+        <Box align="center" mb={12}>
           <Text>Made by <a href="https://twitter.com/jacintofleta" target="_blank"><u>Jacin</u></a></Text>
         </Box>
       
