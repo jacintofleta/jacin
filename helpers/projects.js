@@ -47,6 +47,21 @@ const projects = [
         ]
     },
     {
+        title: "Impuestos.io",
+        state: "Active",
+        revenue: "Revenue €0/month",
+        profitable: "No",
+        description: "Compara cuantos impuestos pagarías en diferentes países. Por ahora solo España y Andorra.",
+        launched: "Jan 2021",
+        timeWorkingOn: "3 hours",
+        links: [
+            {
+                name: "Website",
+                url: "https://impuestos.io"
+            }
+        ]
+    },
+    {
         title: "My Last Video",
         state: "Sold",
         soldAmount: 800,
