@@ -1,8 +1,28 @@
 const projects = [
   {
-    title: "Check my Presets",
+    title: "Drop to Sell",
     state: "Active",
-    revenue: "Revenue €1500/month",
+    revenue: "Revenue €0/month",
+    profitable: "No",
+    description:
+      "Vende archivos en segundos y recibe el dinero directamente en tu cuenta",
+    launched: "Not launched yet",
+    timeWorkingOn: "Part time",
+    links: [
+      {
+        name: "Website",
+        url: "https://droptosell.com",
+      },
+      {
+        name: "Open source",
+        url: "https://github.com/jacintofleta/droptosell",
+      },
+    ],
+  },
+  {
+    title: "Check my Presets",
+    state: "Sold",
+    revenue: "Revenue €1000/month",
     profitable: "No",
     description:
       "Portal donde creadores de contenido de fotografía pueden ganar dinero a través de la venta de presets de lightroom.",
@@ -22,7 +42,7 @@ const projects = [
   {
     title: "Flamingueo",
     state: "Active",
-    revenue: "Over 100k customers",
+    revenue: "Over 200k customers",
     profitable: "Yes",
     description:
       "Marca de referencia para la generación Z en complementos y decoración.",
@@ -43,14 +63,13 @@ const projects = [
       },
       {
         name: "Invertido por Angels Capital y Grupo Zriser",
-        url:
-          "https://www.elconfidencial.com/empresas/2019-06-10/jua-roig-serratosa-flamingueo-millenials_2064302/",
+        url: "https://www.elconfidencial.com/empresas/2019-06-10/jua-roig-serratosa-flamingueo-millenials_2064302/",
       },
     ],
   },
   {
     title: "Impuestos.io",
-    state: "Active",
+    state: "Closed",
     revenue: "Revenue €0/month",
     profitable: "No",
     description:
