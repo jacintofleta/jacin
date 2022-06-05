@@ -22,6 +22,7 @@ const projects = [
   {
     title: "Check my Presets",
     state: "Sold",
+    soldAmount: 25000,
     revenue: "Revenue €1000/month",
     profitable: "No",
     description:
